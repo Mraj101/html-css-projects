@@ -1,0 +1,99 @@
+/* ================
+common css
+================ */
+body{
+    /* margin: 0 auto; */
+    margin: 0;
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: Georgia;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* ================
+Top header css
+================ */
+.header_area{
+    width: 100%;
+    clear: both;
+}
+#top_header_area{
+    background-color: #ba2e1f;
+    padding: 13px 0;
+    margin: auto 0;
+}
+.inner_top_header{
+    overflow: hidden;
+}
+.mini_menu{
+    float: left;
+    width: 70%;
+    padding-top: 2px;
+}
+.mini_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini_menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+.mini_menu ul li::after{
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    height: 11px;
+    width: 1px;
+}
+.mini_menu ul li:last-child::after{
+    display:none;
+}
+.mini_menu ul li a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+.mini_menu ul li a:hover{
+    color: #ddd; 
+}
+.search_area{
+    float: right;
+    width: 30%;
+}
+.search_area form{
+    max-width:210px;
+    width: 96%;
+    background-color: #fff;
+    border-radius: 20px;
+    float: right;
+    padding: 2%;
+}
+.search_area form input{
+    border: 0px solid;
+    width: 75%;
+    padding: 1%;
+    color: #000;
+    float: left;
+    margin-left: 2%;
+}
+.search_area form input[type="submit"]{
+    width: 19%;
+    background: url(/img/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+}
