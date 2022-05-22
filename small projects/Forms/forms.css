@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 750px;
+    width: 75%;
+    border-radius: 6px;
+    border: 2px solid black;
+    margin: 10rem auto;
+}
+.form-header{
+    background-color: grey;
+    height: 70px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+h3{
+    text-align: center;
+    padding-top: 20px;
+}
+.input-form{
+    padding: 30px;
+}
+.check-box{
+    margin: 2rem;
+}
+.inline-forms{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+}
+
+
+
+
+.form-group{
+    width: 100%;
+    margin: 2rem;
+}
+.form-group>label{
+    display: block;
+    font-size: 1.5rem;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+.form-group>fieldset{
+    width: 90%;
+}
+.form-group>button{
+    padding: 6px;
+    margin-right: 5px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+
+.form-group input[type="name"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group select,textarea
+{
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    margin-top: 8px;
+    border: 1px solid #dddd;
+}
