@@ -44,8 +44,22 @@
 /* form container */
 .form-div{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+}
+
+.form-div>p{
+    margin: 20px;
+}
+.form-div>p>span{
+    font-weight: bold;
+}
+.form-div p:hover span{
+    cursor: pointer;
+    text-decoration: underline;
+
 }
 
 .form-div form{
@@ -67,15 +81,20 @@
 .formcontainer .form-group{
     height: 58px;
     margin-bottom: 10px;
-    border: .01px solid rgb(228, 217, 217);
+    border: 1px solid rgb(228, 217, 217);
     border-radius: 5px;
-    padding: 15px 10px;
+}
+.formcontainer .password{
+    padding: 15px 15px;
+    
 }
 .formcontainer .form-group input[type="name"]
 {
 width: 100%;
 height: 100%;
-border: none;
+border: 0px solid;
+border-radius: 5px;
+background-color: #eff1f5;
 font-size: 14px;
 letter-spacing:normal;
 }
@@ -84,13 +103,15 @@ letter-spacing:normal;
     width: 92%;
     height: 26px;
     border: none;
+    border-radius: 8px;
+    background-color: #eff1f5;
 }
 .formcontainer .form-group input[type="submit"]{
     margin-left: 1px;
     width: 20px;
-    height: 20px;
     background: url("/eye.svg");
     background-repeat: no-repeat;
+    background-position: right;
 }
 
 .formcontainer .submissons button{
@@ -122,7 +143,9 @@ letter-spacing:normal;
     color: white;
     font-size: 18px;
 }
-
+.formcontainer:hover button{
+    cursor: pointer;
+}
 
 .paragraph h6{
     text-align: center;
@@ -130,5 +153,7 @@ letter-spacing:normal;
     font-size: 14px;
 }
 hr{
-   border: .5px solid rgb(231, 213, 213);
+   border: none;
+   height: 1px;
+   background-color: #ced1d8;
 }
