@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .container {
+    max-width: 500px;
+    margin: auto;
+  }
+  .chat {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #f1f0e8;
+  }
+
+  .chat-header {
+    display: flex;
+    cursor: pointer;
+  }
+  .profile {
+    width: 100%;
+    background: #036055;
+    display: flex;
+    align-items: center;
+
+    height: 60px;
+    padding: 0px 10px;
+    position: relative;
+  }
+  .profile .pp {
+    width: 50px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 32px;
+  }
+  .arrow {
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    top: 19px;
+    cursor: pointer;
+  }
+  .profile h2 {
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: bottom;
+    color: #fff;
+    font-size: 20px;
+  }
+  .profile span {
+    color: #ccc;
+    position: absolute;
+    left: 100px;
+    top: 40px;
+    font-size: 14px;
+  }
+  .right .icon {
+    display: inline-block;
+    width: 25px;
+    margin-left: 10px;
+  }
+  .left {
+    flex: 1;
+  }
+
+
+
+
+
+
+  .chat-box {
+    flex: 1;
+    background-image: url(/img/bg.jpeg);
+    background-attachment: fixed;
+    overflow-y: scroll;
+  }
+  .chat-box .chat-r{
+      display: flex;
+  }
+  .chat-box .sp{
+      flex: 1;
+  }
+  .chat-box .msg-r{
+      flex-direction: column;
+      max-width: 300px;
+      background-color: #00ff99 ;
+      border-radius: 8px;
+      /* float: right; */
+      margin-top: 10px;
+      margin-right: 8px;
+      padding: 8px;
+  }
+  .chat-box .emoji{
+      height: 20px;
+      width: 20px;
+      vertical-align: middle;
+  }
+  .chat-box .check{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    /* float: right; */
+  }
+
+
+  .chat-box .check span{
+      margin-top: 5px;
+      font-size: 10px;
+      font-weight: 500;
+      vertical-align: middle;
+     
+  }
+  .chat-box .msg-r p{
+ word-break: break-all;
+ vertical-align: middle;
+}
+  .chat-box .check img{
+      float: right;
+      height: 12px;
+      width: 12px;
+      margin-top: 6px;
+      margin-left: 5px;
+    
+  }
+
+ .chat-l{
+   display: flex;
+ }
+
+.chat-l .msg-l{
+  background-color: #fffffff8;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+
+
+  .chat-footer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .chat-footer .emo {
+    display: block;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    bottom: 8px;
+    left: 9px;
+  }
+  .textarea {
+    display: inline-block;
+    height: 40px;
+    border-radius: 60px;
+    flex: 1;
+    outline: none;
+    border: 2px solid #ccc;
+    padding-left: 40px;
+    padding-right: 90px;
+    margin: 5px;
+    vertical-align: middle;
+    line-height: 2;
+  }
+  .footimg {
+    display: inline-block;
+    width: 35px;
+  }
+
+  .mic {
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    margin-right: 10px;
+    vertical-align: super;
+  }
+  .chat-footer .icons {
+    display: block;
+    position: absolute;
+    right: 75px;
+    margin-left: 5px;
+    bottom: 3px;
+  }
+  img.love{
+    height: 25px;
+    width: 25px;
+    vertical-align: middle;
+  }
+   
+  img.post2{
+    width: 285px;
+  }
+
+
+  /* scrollbar */
+ *::-webkit-scrollbar{
+   width: 5px;
+ }
+  *::-webkit-scrollbar-track{
+    background: #f1f1f1;
+  }
+  *::-webkit-scrollbar-thumb{
+    background: #aaa;
+  }
+  *::-webkit-scrollbar:thumb:hover{
+    width: 5px;
+  }
