@@ -1,15 +1,15 @@
 *,*::before,*::after{
     box-sizing: border-box;
-    padding: 0;
+}
+body{
     margin: 0;
 }
-
 .carousel{
     height: 100vh;
     width: 100vw;
     position: relative;
 }
-.carousel ul{
+.carousel > ul{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -18,15 +18,26 @@
 .slide{
     position:absolute;
     inset: 0;
+    opacity: 0;
+}
+.slide[data-active]{
+    opacity: 1;
+}
+.slide>img{
+    display: block;
     height: 100%;
     width: 100%;
-    opacity: 0;
+    object-fit: cover;
+    background-position:center;
 }
 
 .carousel-button{
     position:absolute;
     z-index: 2;
     outline: none;
-    background: none;
+    font-size: 2.5rem;
+    background:none;
+    border: none;
+    top: 50%;
     transform:translateY(-50%);
 }
