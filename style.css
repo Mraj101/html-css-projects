@@ -2,6 +2,15 @@
     margin: 0;
     padding: 0;
 }
+#error{
+    margin-top: 15px;
+    text-align: center;
+    height: 40px;
+    border: 2px solid red;
+    font-weight: 800;
+    font-size: 20px;
+    color: red;
+}
 .container{
     max-width: 750px;
     width: 75%;
@@ -21,7 +30,7 @@
     border: 2px solid rgb(34, 202, 202);
     font-size: 28px;
     font-family: cursive;
-    color: rgba(172, 21, 29, 0.959);
+    color: rgba(34, 14, 15, 0.959);
 }
 h3{
     text-align: center;
