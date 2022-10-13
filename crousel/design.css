@@ -1,4 +1,32 @@
-*{
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.carousel ul{
+    list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.slide{
+    position:absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.carousel-button{
+    position:absolute;
+    z-index: 2;
+    outline: none;
+    background: none;
+    transform:translateY(-50%);
 }
