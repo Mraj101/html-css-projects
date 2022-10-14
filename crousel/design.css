@@ -40,4 +40,19 @@ body{
     border: none;
     top: 50%;
     transform:translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+.carousel-button.next{
+
+    right: 1rem;
+}
+.carousel-button.prev{
+
+    left: 1rem;
+}
+.carousel-button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(10, 10, 10);
+    background-color: rgba(0, 0, 0, 0.4);
 }
