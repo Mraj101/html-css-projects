@@ -34,8 +34,8 @@ body{
     border-radius: 50%;
     background-color: orange;
     transform: translate(-50%,-50%);
-    top: 50%;
-    left: 50%;
+    left: var(--posX);
+    top: var(--posY);
     z-index: 1;
     transition: width .8s, height .8s;
 }
