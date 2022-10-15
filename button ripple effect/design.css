@@ -2,4 +2,45 @@
     margin: 0;
     padding: 0;
 }
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnElement{
+    position: relative;
+    text-decoration: none;
+    border: 2px solid red;
+    height:60px;
+    width: 120px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 100;
+}
+.btnElement span{
+    z-index: 1;
 
+}
+.btnElement::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: orange;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transition: width .8s, height .8s;
+}
+
+.btnElement:hover::before{
+    height: 300px;
+    width: 300px;
+} 
