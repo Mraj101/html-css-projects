@@ -1,7 +1,57 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.brand-name h1{
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+.navigate ul{
+    display: flex;
+}
+.navigate ul li{
+    list-style: none;
+    padding:25px;
+}
+.navigate ul li:hover{
+    background-color: rgb(63, 53, 53);
+}
+
+.navigate ul li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+
+.menu-bar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 1rem;
+}
+.menu-bar>span{
+    height: 2px;
+    width: 25px;
+    background-color: wheat;
+    margin: 3px;
+}
 
 
+@media (max-width:600px){
+    .navigate ul{
+        display: none;
+    }
 
-
-
-
-
+}
