@@ -11,7 +11,6 @@
     background-color: black;
     color: rgb(255, 255, 255);
 }
-
 .brand-name h1{
     font-size: 1.8rem;
     padding: 20px;
@@ -34,14 +33,16 @@
     color: aliceblue;
 }
 
-.menu-bar{
+.toggle-button{
     position: absolute;
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     justify-content: space-between;
+    top: 26px;
     right: 1rem;
+    display: none;
 }
-.menu-bar>span{
+.toggle-button>span{
     height: 2px;
     width: 25px;
     background-color: wheat;
@@ -50,8 +51,26 @@
 
 
 @media (max-width:600px){
-    .navigate ul{
+    .navigate{
         display: none;
     }
-
+    .toggle-button{
+        display: flex;
+        cursor: pointer;
+    }
+    .navigate.active{
+        display: flex;
+    }
+    .nav-bar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navigate{
+        width: 100%;
+    }
+    .navigate ul{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
 }
